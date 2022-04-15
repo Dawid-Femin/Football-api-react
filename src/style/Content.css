@@ -1,0 +1,36 @@
+.contentWrapper {
+    width: 100%;
+    min-height: 80vh;
+    background-color: rgb(175, 175, 175);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.changeTabs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.leagueTab,
+.standingsTab {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212529;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+.leagueTab:hover,
+.standingsTab:hover {
+    color: #13c1a3;
+    cursor: pointer;
+}
