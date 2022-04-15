@@ -1,0 +1,22 @@
+.leaguesWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  justify-items: center;
+  text-align: center;
+  font-size: 12px;
+}
+
+.leaugeDiv {
+    margin: 10px 0;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.leaugeDiv:hover {
+    transform: scale(1.05);
+}
+
+.leaugeDiv img {
+    width: 80px;
+}
