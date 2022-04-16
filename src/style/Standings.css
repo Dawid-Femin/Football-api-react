@@ -1,7 +1,25 @@
+.standingResults{
+    margin: 40px 0;
+}
+
 .standingInfo {
     display: flex;
+    border-bottom: 1px solid black;
 }
 
 .standingInfo img {
     width: 30px;
+}
+
+.showName {
+    width: 300px;
+}
+
+.showName,
+.showPoints {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
 }

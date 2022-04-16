@@ -66,15 +66,18 @@ const Standings = () => {
           <div className='standingResults'>
             {data.map((data, index) => (
               <div key={data.team.id} className='standingInfo'>
-                <h2><span>{`${index+1}`}
+                <div className='showName'>
+                {`${index+1}.`}
                 <img src={data.team.logos[0].href} alt='club'/>
-                </span></h2>
                 {data.team.displayName}
-                {` ${data.stats[3].shortDisplayName}: ${data.stats[3].displayValue}`}
-                {` ${data.stats[0].shortDisplayName}: ${data.stats[0].displayValue}`}
-                {` ${data.stats[2].shortDisplayName}: ${data.stats[2].displayValue}`}
-                {` ${data.stats[1].shortDisplayName}: ${data.stats[1].displayValue}`}
-                {` ${data.stats[6].shortDisplayName}: ${data.stats[6].displayValue}`}
+                </div>
+                <div className='showPoints'>
+                {` Games: ${data.stats[3].displayValue}`}
+                {` ${data.stats[0].displayName}: ${data.stats[0].displayValue}`}
+                {` ${data.stats[2].displayName}: ${data.stats[2].displayValue}`}
+                {` ${data.stats[1].displayName}: ${data.stats[1].displayValue}`}
+                {` ${data.stats[6].displayName}: ${data.stats[6].displayValue}`}
+                </div>
               </div>
             ))}
           </div>
