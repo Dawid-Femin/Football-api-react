@@ -10,7 +10,7 @@ const Leagues = () => {
   useEffect(() => {
     axios('https://api-football-standings.azharimm.site/leagues')
     .then(response => {
-      console.log(response.data.data)
+      // console.log(response.data.data)
       setData(response.data.data)
     })
   },[]);

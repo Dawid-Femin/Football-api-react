@@ -1,0 +1,11 @@
+.standingResults {
+
+}
+
+.standingInfo {
+    display: flex;
+}
+
+.standingInfo img {
+    width: 30px;
+}
